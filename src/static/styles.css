@@ -21,6 +21,7 @@ body.dark-mode {
 }
 
 header {
+  position: relative;
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
@@ -35,6 +36,29 @@ header.dark-mode {
 
 header h1 {
   margin-bottom: 10px;
+}
+
+#dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #3949ab;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#dark-mode-toggle:hover {
+  background-color: #283593;
+}
+
+#dark-mode-toggle.dark-mode {
+  background-color: #555555;
+  color: #ffffff;
 }
 
 main {
